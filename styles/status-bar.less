@@ -11,6 +11,8 @@
   color: @text-color;
   border-top: none;
   background-color: @tree-view-background-color;
+  height: 30px;
+
   a,
   .grammar-status a,
   .line-ending-tile,
@@ -32,6 +34,14 @@
   .inline-block:hover {
     color: darken(@text-color, 10%);
     text-decoration: none;
+  }
+  .diagnostics-status-bar-highlight {
+    display: inline;
+  }
+  .icon {
+    &-stop,&-alert,&-info {
+      display: inline;
+    }
   }
 }
 
