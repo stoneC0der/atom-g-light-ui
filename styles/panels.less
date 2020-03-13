@@ -33,3 +33,21 @@ atom-panel.modal {
 .custom-title-bar atom-panel.modal {
   top: 80px
 }
+
+.tool-panel, .panel, atom-panel {
+  color: @text-color;
+  background-color: @app-background-color;
+}
+
+.platformio-ide-terminal .xterm {
+  background-color: @base-background-color;
+  color: lighten(@text-color, 10%);
+
+  ::selection {
+    background-color: darken(@text-color, 15%);
+  }
+
+  .terminal-cursor {
+    background-color: ;
+  }
+}
