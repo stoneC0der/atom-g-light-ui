@@ -22,3 +22,20 @@ atom-text-editor[mini] {
     background-color: @background-color-selected;
   }
 }
+
+atom-text-editor atom-text-editor-minimap:not([stand-alone]), html atom-text-editor-minimap:not([stand-alone]) {
+  box-shadow: 2px 0px 15px -8px inset darken(@base-background-color, 50%);
+  background-color: @base-background-color;
+}
+
+.settings-view {
+  input[type="checkbox"],
+  input[type="text"],
+  select.form-control,
+  select.form-control:hover,
+  select.form-control:focus {
+    background-color: darken(@base-background-color, 5%);
+    border: 1px solid lighten(@base-background-color, 3%);
+    color: lighten(@text-color, 10%);
+  }
+}
